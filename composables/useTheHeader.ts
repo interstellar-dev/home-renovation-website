@@ -1,4 +1,4 @@
-import { BaseTransitionProps, RendererElement, Ref } from 'vue'
+import { BaseTransitionProps, RendererElement, Ref, ref, onMounted } from 'vue'
 import { gsap } from "gsap";
 
 type UseTheHeader = {

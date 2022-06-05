@@ -39,7 +39,7 @@ const { onEnter, onBeforeEnter, elIsShowen } = useTheHeader()
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--dark);
+  background-color: var(--black);
   opacity: .7;
 }
 
