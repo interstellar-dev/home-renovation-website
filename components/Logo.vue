@@ -4,6 +4,6 @@
 
 <style lang="css" scoped>
 .logo {
-  width: 200px;
+  width: 20vh;
 }
 </style>

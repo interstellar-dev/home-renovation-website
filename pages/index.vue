@@ -1,5 +1,5 @@
 <template>
   <TheHeader/>
-  <main>main</main>
+  <MainContent/>
   <footer>footer</footer>
 </template>

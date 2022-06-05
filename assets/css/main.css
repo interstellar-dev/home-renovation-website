@@ -5,10 +5,13 @@
 }
 
 :root {
-    --dark: #070707;
+    --black: #070707;
     --accent: #57f8f5;
+    --dark: #181818;
+    --white: 250, 250, 250;
     --size-index: calc(1vw + 1vh);
     --gutter: 20px;
+    --transition: .75s cubic-bezier(0.2, 0.6, 0, 1);
 }
 
 @font-face {
@@ -30,13 +33,20 @@
 }
 
 body, html {
-    background-color: var(--dark);
-    color: #fff;
+    background-color: var(--black);
+    color: rgba(var(--white), .85);;
     font-family: raleway_m, sans-serif;
     line-height: 1.8;
-    font-size: calc(var(--size-index) * .8);
+    font-size: calc(var(--size-index) * .7);
 }
 
 .grid {
     display: grid;
+}
+
+
+@media screen and (max-width: 768px) {
+    body, html {
+        font-size: calc(var(--size-index) * 1.2);
+    }
 }
