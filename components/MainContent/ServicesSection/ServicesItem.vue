@@ -23,9 +23,7 @@ const toggleSowText = () => textIsShowen.value = !textIsShowen.value
     class="services-item grid"
   >
     <header class="services-item-header grid">
-      <div class="services-item-header__image">
-        <img :src='path' :alt="alt">
-      </div>
+      <img class="services-item-header__image" :src='path' :alt="alt">
       <div v-show="textIsShowen" class="services-item-header__text">
         <b>Заказать</b>
       </div>
@@ -44,13 +42,15 @@ const toggleSowText = () => textIsShowen.value = !textIsShowen.value
   background-color: var(--dark);
   position: relative;
   padding: calc(var(--gutter)* 2);
-  border-radius: 5px;
+  border-bottom: 5px solid rgba(var(--white), .5);
+  border-radius: 10px;
   align-content: space-between;
   transition: all var(--transition);
 }
 
 .services-item:hover {
   box-shadow: 0 0 25px 1px var(--accent);
+  border: none
 }
 
 .services-item h3 {
@@ -83,6 +83,10 @@ const toggleSowText = () => textIsShowen.value = !textIsShowen.value
 
 .services-item-header {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.services-item-header__image {
+  width: 8vh;
 }
 
 .services-item-header__text {
