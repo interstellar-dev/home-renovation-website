@@ -6,7 +6,7 @@ export const useServiceSection = ():IUseServicesSection => {
   const servicesItems:ServicesItems  = ref<IServiceItem[]>([
     {
       icon: {
-        path: '/images/icons/services-section/1-home-key.png',
+        path: '/images/icons/services-section/noun-pipes.png',
         alt: 'ключ с домом'
       },
       header: 'Черновой ремонт',
@@ -24,7 +24,7 @@ export const useServiceSection = ():IUseServicesSection => {
     },
     {
       icon: {
-        path: '/images/icons/services-section/1-home-key.png',
+        path: '/images/icons/services-section/noun-brick.png',
         alt: 'ключ с домом'
       },
       header: 'Космеический ремонт',
@@ -40,7 +40,7 @@ export const useServiceSection = ():IUseServicesSection => {
     },
     {
       icon: {
-        path: '/images/icons/services-section/1-home-key.png',
+        path: '/images/icons/services-section/capital.png',
         alt: 'ключ с домом'
       },
       header: 'Капитальный ремонт',

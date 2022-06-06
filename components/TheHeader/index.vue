@@ -40,7 +40,7 @@ const { onEnter, onBeforeEnter, elIsShowen } = useTheHeader()
   right: 0;
   bottom: 0;
   background-color: var(--black);
-  opacity: .7;
+  opacity: .2;
 }
 
 .header-logo {
