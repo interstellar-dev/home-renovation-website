@@ -19,6 +19,7 @@ const { servicesItems } = useServiceSection()
 
 <style lang="css" scoped>
 .services-section {
+  min-height: 100vh;
   margin: 0 auto;
   padding: 5vh;
   grid-template-columns: repeat(3, 1fr);
