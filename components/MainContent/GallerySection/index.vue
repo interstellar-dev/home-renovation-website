@@ -177,6 +177,7 @@ const {
   transition: transform var(--transition);
   transition-duration: 3s;
   line-height: calc(var(--size-index) * 1.3);
+  font-weight: 300;
 }
 
 .description.hidden {
