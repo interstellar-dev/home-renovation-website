@@ -32,6 +32,11 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: ubuntu_mono;
+    src: url("./assets/fonts/ubuntu-mono.woff2");
+}
+
 body, html {
     background-color: var(--black);
     color: rgba(var(--white), .85);;
