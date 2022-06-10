@@ -6,7 +6,7 @@ export interface IUseFooter {
 }
 
 export const useFooter = ():IUseFooter => {
-  const phone:string = '+79990002233'
+  const phone:string = '+79617926799'
 
   const startYear = 2022
   const dotayYear = new Date().getFullYear()
