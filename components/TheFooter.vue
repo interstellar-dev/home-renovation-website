@@ -5,7 +5,7 @@ const { phone, date }:IUseFooter = useFooter()
 </script>
 
 <template>
-  <footer>
+  <footer data-aos="fade-up" data-aos-delay="1000">
     <div class="contacts">
       <Logo/>
       <QrCode/>
