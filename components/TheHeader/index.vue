@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-const { onEnter, onBeforeEnter, elIsShowen } = useTheHeader()
+import { IUseTheHeader } from "~/composables/useTheHeader.js";
+
+const { onEnter, onBeforeEnter, elIsShowen }:IUseTheHeader = useTheHeader()
 </script>
 
 <template>

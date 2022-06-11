@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import { ServicesItems, IServiceItem, IUseServicesSection } from '@/types/services.js'
+import { ServicesItems, IServiceItem, IUseServicesSection, ServiceType } from '@/types'
 
 export const useServiceSection = ():IUseServicesSection => {
 
@@ -7,9 +7,9 @@ export const useServiceSection = ():IUseServicesSection => {
     {
       icon: {
         path: '/images/icons/services-section/noun-pipes.png',
-        alt: 'ключ с домом'
+        alt: 'черновой ремонт'
       },
-      header: 'Черновой ремонт',
+      header: ServiceType.Rougt,
       description: [
         'Демонтаж, стяжка, выравнивание пола',
         'Грунтовка, штукатурка, шпаклевка стен',
@@ -25,9 +25,9 @@ export const useServiceSection = ():IUseServicesSection => {
     {
       icon: {
         path: '/images/icons/services-section/noun-brick.png',
-        alt: 'ключ с домом'
+        alt: 'космеический ремонт'
       },
-      header: 'Космеический ремонт',
+      header: ServiceType.Cosmetic,
       description: [
         'Демонтаж, монтаж напольного покрытия',
         'Устранение мелких дефектов стен, потолка',
@@ -43,7 +43,7 @@ export const useServiceSection = ():IUseServicesSection => {
         path: '/images/icons/services-section/capital.png',
         alt: 'ключ с домом'
       },
-      header: 'Капитальный ремонт',
+      header: ServiceType.Capital,
       description: [
         'Демонтаж перегородок и стен, инженерных сетей, старой отделки',
         'Монтаж инженерных сетей',

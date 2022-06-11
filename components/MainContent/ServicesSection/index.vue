@@ -1,6 +1,9 @@
 <script lang="ts" setup>
+import { IUseServicesSection } from "~/types/index.js";
 import ServicesItem from './ServicesItem.vue'
-const { servicesItems } = useServiceSection()
+
+const form = useForm()
+const { servicesItems }:IUseServicesSection = useServiceSection()
 </script>
 
 <template>
@@ -13,6 +16,7 @@ const { servicesItems } = useServiceSection()
       v-for="(item, idx) in servicesItems"
       :key="idx"
       :serviceItem="item"
+      @click="form.openFormBySelectedServices(item.header)"
     />
   </section>
 </template>
