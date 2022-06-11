@@ -64,7 +64,7 @@ const {
         <div
           class="slider__img"
           :data-swiper-parallax="n % 2 === 0 ? '20%' : '30%'"
-          :style="`background-image: url('./assets/images/gallery/${n}.jpg');`"
+          :style="`background-image: url('/images/gallery/${n}.jpg');`"
         />
       </swiper-slide>
     </swiper>
