@@ -1,10 +1,17 @@
-import { BaseTransitionProps, Ref } from 'vue'
+import { Ref } from 'vue'
+
+export enum ServiceType {
+  Rougt = 'Черновой ремонт',
+  Cosmetic = 'Косметический ремонт',
+  Capital = 'Капитальный ремонт'
+}
+
 export interface IServiceItem {
   icon: {
     path: string,
     alt: string
   },
-  header: string,
+  header: ServiceType,
   description: string[]
 }
 

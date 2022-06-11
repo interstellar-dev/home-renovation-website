@@ -12,7 +12,10 @@
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
+    "@nuxtjs/composition-api": "^0.32.0",
+    "@pinia/nuxt": "^0.1.9",
     "gsap": "^3.10.4",
+    "pinia": "^2.0.14",
     "swiper": "^8.2.2"
   }
 }

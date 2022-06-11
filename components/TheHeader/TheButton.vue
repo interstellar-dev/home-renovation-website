@@ -1,5 +1,9 @@
+<script lang="ts" setup>
+const modal = useModal()
+</script>
+
 <template>
-  <div class="button-container">
+  <div @click="modal.open" class="button-container">
     <a href="#" class="button">
       <slot/>
     </a>

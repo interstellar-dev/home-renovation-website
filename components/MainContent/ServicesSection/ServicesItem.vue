@@ -18,9 +18,9 @@ const toggleSowText = () => textIsShowen.value = !textIsShowen.value
 
 <template>
   <div
+    class="services-item grid"
     @mouseover.stop="toggleSowText()"
     @mouseout.stop="toggleSowText()"
-    class="services-item grid"
   >
     <header class="services-item-header grid">
       <img class="services-item-header__image" :src='path' :alt="alt">
