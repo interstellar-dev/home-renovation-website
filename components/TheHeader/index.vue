@@ -5,7 +5,7 @@ const { onEnter, onBeforeEnter, elIsShowen }:IUseTheHeader = useTheHeader()
 </script>
 
 <template>
-  <header class="main-header grid">
+  <header data-aos="fade" class="main-header grid">
 
     <Logo class="header-logo"/>
 

@@ -7,7 +7,12 @@ const { servicesItems }:IUseServicesSection = useServiceSection()
 </script>
 
 <template>
-  <section class="services-section grid">
+  <section
+    data-aos="fade"
+    data-aos-duration="1000"
+    data-aos-delay="300"
+    class="services-section grid"
+  >
     <header>
       <h2>Услуги.</h2>
     </header>
@@ -16,6 +21,10 @@ const { servicesItems }:IUseServicesSection = useServiceSection()
       v-for="(item, idx) in servicesItems"
       :key="idx"
       :serviceItem="item"
+      data-aos="slide-left"
+      :data-aos-duration="`${idx}000`"
+      data-aos-delay="500"
+      data-aos-easing="ease-out-sine"
       @click="form.openFormBySelectedServices(item.header)"
     />
   </section>
@@ -28,6 +37,7 @@ const { servicesItems }:IUseServicesSection = useServiceSection()
   padding: 5vh;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: var(--gutter);
+  overflow: hidden;
 }
 
 .services-section header {
