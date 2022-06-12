@@ -23,13 +23,19 @@ yarn install
 ### OR
 
 ```bash
-# yarn
-yarn install
+# npm
+npm install
 ```
 
 ## Development Server
 
 Start the development server on http://localhost:3000
+
+```bash
+yarn dev
+```
+
+### OR
 
 ```bash
 npm run dev
