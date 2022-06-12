@@ -1,20 +1,30 @@
-# Nuxt 3 Minimal Starter
+# Home renovation website
+### See [result](https://spiffy-stroopwafel-e62006.netlify.app/)
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+##### Stack:
+> Nuxt 3
+> Typescript
+> Pinia
+> gsap
+> aos
+> swiper
 
-## Setup
+## Clone
 
-Make sure to install the dependencies:
+```bash
+git clone https://github.com/interstellar-dev/home-renovation-website.git
+````
+
+## Install
+```bash
+# yarn
+yarn install
+```
+### OR
 
 ```bash
 # yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
@@ -24,19 +34,3 @@ Start the development server on http://localhost:3000
 ```bash
 npm run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
