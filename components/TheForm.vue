@@ -137,6 +137,7 @@ input:focus {
   form {
     grid-template-columns: 200px 1fr;
     grid-gap: 16px;
+    width: 540px;
   }
 
   label {
