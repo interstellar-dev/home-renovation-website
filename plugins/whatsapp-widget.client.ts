@@ -2,7 +2,7 @@ export default defineNuxtPlugin(_ => {
   // @ts-ignore
   !function(){
     var e = {
-        "token":"", // 78882220022
+        "token":"79510900203", // 78882220022
         "position":"right",
         "bottomSpacing":"20px",
         "callToActionMessage":"",
