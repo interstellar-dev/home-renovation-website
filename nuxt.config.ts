@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      websiteUrl: 'http://homecraftmoscow.ru'
+      websiteUrl: 'https://homecraftmoscow.ru'
     }
   }
 })

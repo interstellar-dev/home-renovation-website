@@ -14,7 +14,7 @@ export interface IUseForm {
   formData: IFormData,
 }
 
-const URL = 'https://getform.io/f/2597b0f6-2cbe-45e3-98d5-5296ab9268bd'
+const URL = 'http://api.homecraftmoscow.ru/api/form'
 
 export const useForm = defineStore('form', {
   state: () => ({
