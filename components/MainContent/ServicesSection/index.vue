@@ -23,7 +23,7 @@ const { servicesItems }:IUseServicesSection = useServiceSection()
       :serviceItem="item"
       data-aos="slide-left"
       :data-aos-duration="`${idx}000`"
-      data-aos-delay="500"
+      data-aos-delay="400"
       data-aos-easing="ease-out-sine"
       @click="form.openFormBySelectedServices(item.header)"
     />

@@ -15,34 +15,32 @@ const { formData, spinnerIsShowen, errorMessageIsShowen } = storeToRefs(form)
     <TheSpinner v-if="spinnerIsShowen" />
 
     <form
-        v-else
-        action="https://getform.io/f/2597b0f6-2cbe-45e3-98d5-5296ab9268bd"
-        accept-charset="UTF-8"
-        @submit.prevent="form.submit"
-        method="POST"
-        class="centered-blok"
+      v-else
+      accept-charset="UTF-8"
+      @submit.prevent="form.submit"
+      method="POST"
     >
       <div class="close-form" @click.self="modal.close"/>
 
       <label>Имя</label>
       <input
-          type="text"
-          v-model="formData.name"
-          placeholder="Имя*"
-          required="required"
+        type="text"
+        v-model="formData.name"
+        placeholder="Имя*"
+        required="required"
       />
       <label>Телефон</label>
       <input
-          type="text"
-          v-model="formData.phone"
-          placeholder="Телефон *"
-          required="required"
+        type="text"
+        v-model="formData.phone"
+        placeholder="Телефон *"
+        required="required"
       />
       <label>Email</label>
       <input
-          type="email"
-          v-model="formData.email"
-          placeholder="Email"
+        type="email"
+        v-model="formData.email"
+        placeholder="Email"
       >
       <label>Услуга на выбор</label>
       <select v-model="formData.service">
@@ -70,6 +68,7 @@ form {
   border: 1px solid var(--accent);
   color: var(--accent);
   border-radius: 10px;
+  width: 340px;
 }
 
 .close-form {
@@ -134,7 +133,7 @@ input:focus {
   outline: 3px solid var(--accent);
 }
 
-@media (min-width: 550px) {
+@media screen and (min-width: 550px) {
   form {
     grid-template-columns: 200px 1fr;
     grid-gap: 16px;

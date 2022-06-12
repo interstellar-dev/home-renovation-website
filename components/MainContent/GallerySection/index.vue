@@ -21,7 +21,7 @@ const {
   <section
     class="gallery-section"
     data-aos="fade-up"
-    data-aos-delay="1200"
+    data-aos-delay="600"
     data-aos-easing="ease-out-sine"
   >
 
