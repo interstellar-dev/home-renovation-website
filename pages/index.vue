@@ -4,7 +4,7 @@ import AOS from "aos";
 
 const config = useRuntimeConfig()
 
-const TITLE = 'ремонт квартир в Москве'
+const TITLE = 'Ремонт квартир в Москве'
 const DESCRIPTION = 'Ремонт квартир в Москве. Качественный ремонт по приемлемым ценам'
 
 useHead({
