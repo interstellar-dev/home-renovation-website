@@ -2,7 +2,7 @@ import { ServiceType, stringOrNull } from "~/types";
 import { defineStore } from "pinia";
 import { useModal } from "~/composables/useModal.js";
 
-const URL = 'https://secret-river-82420.herokuapp.com/'
+const URL = 'https://secret-river-82420.herokuapp.com/api/form'
 
 interface IFormData {
   name: stringOrNull,
@@ -35,8 +35,7 @@ export const useForm = defineStore('form', {
       this.spinnerIsShowen = true
 
       try {
-        await $fetch(URL, {
-          credentials: 'include',
+        await fetch(URL, {
           method: 'POST',
           body: JSON.stringify(this.formData)
         })
