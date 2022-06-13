@@ -36,11 +36,7 @@ export const useForm = defineStore('form', {
 
       try {
         await $fetch(URL, {
-          headers: {
-            'Origin': URL,
-            'Content-Type': 'application/json',
-            'Accept': '/'
-          },
+          credentials: 'include',
           method: 'POST',
           body: JSON.stringify(this.formData)
         })
