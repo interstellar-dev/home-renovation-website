@@ -1,5 +1,5 @@
 <template>
-  <img class="qr-code" src="/images/qr-code.png" alt="qr-code" >
+  <img class="qr-code" src="/images/qr-code.jpg" alt="qr-code" >
 </template>
 
 <style lang="css" scoped>
