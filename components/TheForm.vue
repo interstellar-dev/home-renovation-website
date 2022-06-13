@@ -16,9 +16,7 @@ const { formData, spinnerIsShowen, errorMessageIsShowen } = storeToRefs(form)
 
     <form
       v-else
-      accept-charset="UTF-8"
       @submit.prevent="form.submit"
-      method="POST"
     >
       <div class="close-form" @click.self="modal.close"/>
 
