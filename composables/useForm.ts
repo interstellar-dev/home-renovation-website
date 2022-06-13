@@ -14,7 +14,7 @@ export interface IUseForm {
   formData: IFormData,
 }
 
-const URL = 'http://api.homecraftmoscow.ru/api/form'
+const URL = 'https://secret-river-82420.herokuapp.com/'
 
 export const useForm = defineStore('form', {
   state: () => ({

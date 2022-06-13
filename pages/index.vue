@@ -18,7 +18,6 @@ useHead({
     { property: 'og:url', content: config.websiteUrl },
     { property: 'og:image', content: `${config.websiteUrl}${config.app.buildAssetsDir}0-builder.jpg` },
     { property: 'og:image:alt', content: DESCRIPTION },
-    { 'http-equiv': 'Content-Security-Policy', content: 'upgrade-insecure-requests' }
   ],
 })
 
