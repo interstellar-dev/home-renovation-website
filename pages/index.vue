@@ -16,7 +16,7 @@ useHead({
     { property: 'og:title', content: `${TITLE}` },
     { property: 'og:description', content: DESCRIPTION },
     { property: 'og:url', content: config.websiteUrl },
-    { property: 'og:image', content: `${config.websiteUrl}${config.app.buildAssetsDir}0-builder.jpg` },
+    { property: 'og:image', content: `${config.websiteUrl}/images/0-builder.jpg` },
     { property: 'og:image:alt', content: DESCRIPTION },
   ],
 })
